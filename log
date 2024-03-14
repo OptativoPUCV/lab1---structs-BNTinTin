@@ -149,3 +149,21 @@ exercises.c:50:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 669d260
+Thu 14 Mar 2024 08:57:18 PM UTC: 
+ exercises.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:79:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   79 |   return nuevoArreglo;
+      |          ^~~~~~~~~~~~
+exercises.c:67:6: note: declared here
+   67 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:49:1: error: control reaches end of non-void function [-Werror=return-type]
+   49 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a3ce4fb

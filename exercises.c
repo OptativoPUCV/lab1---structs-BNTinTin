@@ -45,8 +45,7 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { 
-  
+int *filterEvenNumbers(int arr[], int size, int *newSize) {
 }
 
 /*
@@ -55,7 +54,15 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
+int comparar(const void *pivote, const void *item)
+{
+  int *ptrPivote = (int *) pivote;
+  int *ptrItem = (int *) item;
 
+  if (*ptrPivote > *ptrItem) return 1;
+
+  return 0;
+}
 
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int* nuevoArreglo = (int*)malloc(sizeof(int) * (size1 + size2));
