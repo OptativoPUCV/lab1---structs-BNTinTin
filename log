@@ -316,3 +316,9 @@ exercises.c:92:7: error: ‘vairable’ undeclared (first use in this function);
 exercises.c:92:7: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 2ed524b
+Thu 14 Mar 2024 09:26:47 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|3
+total_score: 40/70
+1cc919d

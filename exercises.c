@@ -89,7 +89,7 @@ int checkSorted(int arr[], int size)
   {
     if (arr[i] > arr[i + 1])
     {
-      vairable = -1;
+      variable = -1;
     }
   }
   return variable;
