@@ -78,6 +78,7 @@ void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]
   qsort (nuevoArreglo,size1 + size2, sizeof(int), comparar);
   
   return nuevoArreglo;
+  
 }
 
 /*
