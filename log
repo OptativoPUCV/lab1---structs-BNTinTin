@@ -304,3 +304,15 @@ exercises.c:87:7: error: unused variable ‘variable’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 ae0f1c7
+Thu 14 Mar 2024 09:26:36 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:92:7: error: ‘vairable’ undeclared (first use in this function); did you mean ‘variable’?
+   92 |       vairable = -1;
+      |       ^~~~~~~~
+      |       variable
+exercises.c:92:7: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2ed524b

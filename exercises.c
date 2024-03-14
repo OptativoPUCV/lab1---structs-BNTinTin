@@ -92,8 +92,8 @@ int checkSorted(int arr[], int size)
       vairable = -1;
     }
   }
+  return variable;
 
-  return -2; 
 }
 
 /*
