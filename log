@@ -233,3 +233,14 @@ exercises.c:48:60: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 b71fd7a
+Thu 14 Mar 2024 09:01:11 PM UTC: 
+ exercises.c | 3 ---
+ 1 file changed, 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:48:60: error: control reaches end of non-void function [-Werror=return-type]
+   48 | int *filterEvenNumbers(int arr[], int size, int *newSize) {}
+      |                                                            ^
+cc1: all warnings being treated as errors
+Compilation failed
+d82275e
