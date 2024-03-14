@@ -9,14 +9,33 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int findMax(int arr[], int size) { return 0; }
+int findMax(int arr[], int size) {
+  valorMasGrande = 0;
+  for (int i = 0; i < size; i++)
+    {
+      if (arr[i] > valorMasGrande)
+      {
+        valorMasGrande = arr[i];
+      }
+    }
+  
+  return valorMasGrande; 
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-void reverseArray(int arr[], int size) {}
+void reverseArray(int arr[], int size) {
+  int aux;
+  for (int i = 0; i < size / 2; i++)
+  {
+    aux = arr[i];
+    arr[i] = arr[size - i - 1];
+    arr[size - i - 1] = aux;
+  }
+}
 
 /*
 Ejercicio 3: Filtrar Números Pares
@@ -26,7 +45,9 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+  
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -34,8 +55,25 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
-void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
-                       int result[]) {}
+size_t comparar(const void *a, const void *b)
+{
+  
+}
+
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
+  int* nuevoArreglo = (int*)malloc(sizeof(int) * (size1 + size2));
+
+  for (int i = 0; i < size1; i++))
+  {
+    nuevoArreglo[i] = arr1[i];
+  }
+  for (int i = 0; i < size2; i++)
+  {
+    nuevoArreglo[size1 + i] = arr2[i];
+  }
+  qsort (nuevoArreglo,size_1 + size_2, sizeof(int), comparar);
+  return nuevoArreglo;
+}
 
 /*
 Ejercicio 5: Comprobación de Ordenación
