@@ -65,17 +65,17 @@ int comparar(const void *pivote, const void *item)
 
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) 
 {
-  int* nuevoArreglo = (int*)malloc(sizeof(int) * (size1 + size2));
+  result = (int*)malloc(sizeof(int) * (size1 + size2));
 
   for (int i = 0; i < size1; i++)
   {
-    nuevoArreglo[i] = arr1[i];
+      result[i] = arr1[i];
   }
   for (int k = 0; k < size2; k++)
   {
-    nuevoArreglo[size1 + k] = arr2[k];
+      result[size1 + k] = arr2[k];
   }
-  qsort (nuevoArreglo,size1 + size2, sizeof(int), comparar);  
+  qsort (result,size1 + size2, sizeof(int), comparar);  
 }
 
 /*
