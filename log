@@ -288,3 +288,19 @@ Thu 14 Mar 2024 09:21:39 PM UTC:
  tests:  0|3
 total_score: 40/70
 470503b
+Thu 14 Mar 2024 09:26:15 PM UTC: 
+ exercises.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:92:7: error: ‘vairable’ undeclared (first use in this function); did you mean ‘variable’?
+   92 |       vairable = -1;
+      |       ^~~~~~~~
+      |       variable
+exercises.c:92:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:87:7: error: unused variable ‘variable’ [-Werror=unused-variable]
+   87 |   int variable = -2;
+      |       ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ae0f1c7
