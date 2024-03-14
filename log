@@ -127,3 +127,25 @@ exercises.c:61:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 ed4c625
+Thu 14 Mar 2024 08:55:11 PM UTC: 
+ exercises.c | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:71:51: error: ‘comparar’ undeclared (first use in this function)
+   71 |   qsort (nuevoArreglo,size1 + size2, sizeof(int), comparar);
+      |                                                   ^~~~~~~~
+exercises.c:71:51: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:72:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   72 |   return nuevoArreglo;
+      |          ^~~~~~~~~~~~
+exercises.c:60:6: note: declared here
+   60 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
+      |      ^~~~~~~~~~~~~~~~~
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:50:1: error: control reaches end of non-void function [-Werror=return-type]
+   50 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+669d260

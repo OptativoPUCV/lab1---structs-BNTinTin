@@ -10,7 +10,7 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
 int findMax(int arr[], int size) {
-  valorMasGrande = 0;
+  int valorMasGrande = 0;
   for (int i = 0; i < size; i++)
     {
       if (arr[i] > valorMasGrande)
@@ -55,23 +55,20 @@ Descripción: Escribe una función que tome dos arreglos
 ordenados de menor a mayor y sus tamaños, y luego fusione estos dos
 arreglos en un tercer arreglo también ordenado de menor a mayor.
 */
-size_t comparar(const void *a, const void *b)
-{
-  
-}
+
 
 void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,int result[]) {
   int* nuevoArreglo = (int*)malloc(sizeof(int) * (size1 + size2));
 
-  for (int i = 0; i < size1; i++))
+  for (int i = 0; i < size1; i++)
   {
     nuevoArreglo[i] = arr1[i];
   }
-  for (int i = 0; i < size2; i++)
+  for (int k = 0; k < size2; k++)
   {
-    nuevoArreglo[size1 + i] = arr2[i];
+    nuevoArreglo[size1 + k] = arr2[k];
   }
-  qsort (nuevoArreglo,size_1 + size_2, sizeof(int), comparar);
+  qsort (nuevoArreglo,size1 + size2, sizeof(int), comparar);
   return nuevoArreglo;
 }
 
