@@ -466,3 +466,14 @@ Sat 16 Mar 2024 02:23:49 AM UTC:
  tests:  0|3
 total_score: 40/70
 f98e734
+Sat 16 Mar 2024 02:27:12 AM UTC: 
+ exercises.c | 36 ++++++++++++++++++++----------------
+ 1 file changed, 20 insertions(+), 16 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:89:19: error: ‘n’ undeclared (first use in this function)
+   89 |   for (i = 1; i < n; i++) {
+      |                   ^
+exercises.c:89:19: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+2908edb
