@@ -378,3 +378,27 @@ Sat 16 Mar 2024 02:14:04 AM UTC:
  tests:  0|3
 total_score: 40/70
 158d8a4
+Sat 16 Mar 2024 02:14:44 AM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:94:12: error: expected ‘(’ before ‘*’ token
+   94 |         if *variables == 1)
+      |            ^
+      |            (
+exercises.c:94:13: error: ‘variables’ undeclared (first use in this function); did you mean ‘variable’?
+   94 |         if *variables == 1)
+      |             ^~~~~~~~~
+      |             variable
+exercises.c:94:13: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:94:9: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   94 |         if *variables == 1)
+      |         ^~
+exercises.c:94:27: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   94 |         if *variables == 1)
+      |                           ^
+exercises.c:94:27: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+28a746f
