@@ -84,18 +84,24 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) {
     int variable = 0; // Inicializar variable como 0
-    for (int i = 0; i < size - 1; i++) {
-        if (arr[i] > arr[i + 1]) {
-            variable = -1;
-            if (variable == 1) {
-                return 0;
-            }
-        } else if (arr[i] < arr[i + 1]) {
-            if (variable == -1) {
-                return 0;
-            }
-            variable = 1;
+    for (int i = 0; i < size - 1; i++) 
+    {
+      if (arr[i] > arr[i + 1]) 
+      {
+        variable = -1;
+        if (variable == 1) 
+        {
+          return 0;
         }
+      } 
+      else if (arr[i] < arr[i + 1]) 
+      {
+        if (variable == -1) 
+        {
+          return 0;
+        }
+          variable = 1;
+      }
     }
     return variable;
 }
