@@ -86,7 +86,7 @@ int checkSorted(int arr[], int size)
 {
   int orden_ascendente = 1;
   int i;
-  for (i = 1; i < n; i++) {
+  for (i = 1; i < size; i++) {
       if (arr[i] < arr[i - 1]) {
           orden_ascendente = 0;
           break;
@@ -95,7 +95,7 @@ int checkSorted(int arr[], int size)
 
   // Comprobación de orden descendente
   int orden_descendente = 1;
-  for (i = 1; i < n; i++) {
+  for (i = 1; i < size; i++) {
       if (arr[i] > arr[i - 1]) {
           orden_descendente = 0;
           break;
