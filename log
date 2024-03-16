@@ -322,3 +322,13 @@ Thu 14 Mar 2024 09:26:47 PM UTC:
  tests:  0|3
 total_score: 40/70
 1cc919d
+Sat 16 Mar 2024 02:08:25 AM UTC: 
+ exercises.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:93:31: error: expected statement before ‘)’ token
+   93 |       if (arr[i] < arr[i + 1]))
+      |                               ^
+Compilation failed
+f2d0274

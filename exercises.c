@@ -90,10 +90,18 @@ int checkSorted(int arr[], int size)
     if (arr[i] > arr[i + 1])
     {
       variable = -1;
+      if (arr[i] < arr[i + 1]))
+      {
+        if (variable == -1)
+        {
+          return 0;
+        }
+        variable = 1; 
+      }
     }
+    
   }
   return variable;
-
 }
 
 /*
