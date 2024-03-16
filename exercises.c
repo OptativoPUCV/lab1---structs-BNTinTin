@@ -91,7 +91,7 @@ int checkSorted(int arr[], int size)
       if (arr[i] > arr[i + 1])
       {
         variable = -1;
-        if *variables == 1)
+        if variable == 1)
         {
           return 0;
         }
